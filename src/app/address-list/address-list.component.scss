@@ -1,0 +1,54 @@
+.container{
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.double-box{
+    width: 95%;
+    height: 3.5rem;
+    border: solid 0.1rem;
+    border-color: lightgray;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box-border{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    border-right: solid 0.1rem;
+    border-color: lightgray;
+}
+.box{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.fav{
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    color: darkgray;
+}
+
+.icon{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.address{
+    margin-top: 1.5rem;
+    border-bottom:solid 0.1rem;
+    border-color:lightgray ;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+
+}
+

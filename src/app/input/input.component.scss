@@ -1,4 +1,5 @@
 .container{
+    margin-top: 1rem;
     border-bottom: solid 0.1rem lightgrey;
 }
 
@@ -11,14 +12,17 @@
 
 }
 
-
-
 .close{
     padding-top: 1rem;
 }
 
 .icon{
    margin-left: 1rem;
+}
+
+.dog-icon{
+    height: 1.5rem;
+    width: 3rem;
 }
 
 .input-icon{
@@ -28,9 +32,7 @@
 .checkbox{
     margin-left: 1rem;
     margin-right: 0.5rem;
-    padding: 0.5rem;
-    height: 2rem;
-    width: 1.5rem;
+    padding: 0.3rem;
 }
 
 .checkbox:checked{
@@ -39,10 +41,16 @@
 
 .label{
     color: #FFBE0D;
-    font-size: 1rem;
-    padding-top: 0.5rem;
+    font-size: 1.2rem;
 }
 
+.isIPhone{
+    margin-top: 0.5rem;
+}
+ 
+.isAndroid{
+    margin-top: 0rem;
+}
 .check-label{
     display: flex;
     flex-direction: row;
@@ -61,4 +69,13 @@
   padding: 0.5rem;
   margin: 0.5rem 0.5rem 0.5rem 1rem;
   border-radius: 0.5rem;
+}
+
+.input:focus{
+    background-color:#EAE9F0;
+    font-weight:bold;
+
+}
+.input:focus::-webkit-input-placeholder {
+    color: black;
 }

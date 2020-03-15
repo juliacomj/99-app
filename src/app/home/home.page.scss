@@ -1,24 +1,9 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-
-
-#container a {
-  text-decoration: none;
-}
-
 
 ion-content ion-toolbar {
   --background: translucent;

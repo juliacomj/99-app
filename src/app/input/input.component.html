@@ -1,17 +1,19 @@
-<div class="container"  >
-<div class="close">
-  <img class='icon' src="../../assets/icon/close-24px (1).svg" alt="botão fechar">
-</div>
-<div class="inputs">
-  <input class="input" placeholder="Insira o local de embarque" type="text">
-  <div class="input-icon">
-  <input class="input" placeholder="Para onde vamos?" type="text">
-  <img class='add' src="../../assets/icon/add-24px (1).svg" alt="botão fechar">
-</div>
-</div>
-<div class="check-label">
-<input class="checkbox"  type="checkbox">
-<label class="label" >Estou com pet</label>
-</div>
-
+<div class="container">
+  <div class="close">
+    <img class='icon' src="../../assets/icon/close-24px (1).svg" alt="botão fechar">
+  </div>
+  <div class="inputs">
+    <input *ngIf="hideInput" class="input" (focus)='changeLabel()' placeholder="Insira o seu local de embarque" type="text">
+    <input  *ngIf="!hideInput" (blur)='changeLabel()' (keyup)="getLocation($event)" class="input" placeholder="Localização atual" type="text">
+    <div class="input-icon">
+      <input class="input" placeholder="Para onde vamos?" type="text">
+      <img class='add' src="../../assets/icon/add-24px (1).svg" alt="botão fechar">
+    </div>
+  </div>
+  
+  <div class="check-label">
+    <ion-toggle class="checkbox" color='warning' [(ngModel)]="pet"></ion-toggle>
+    <ion-label [ngClass]="{isIPhone: 'isApple', isAndroid:!isApple }" class="label">Estou com pet</ion-label>
+    <img [ngClass]="{isIPhone: 'isApple', isAndroid:!isApple }" src="../../assets/icon/dog.svg" class="dog-icon" aria-hidden="false">
+  </div>
 </div>

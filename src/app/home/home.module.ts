@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { InputComponent } from '../input/input.component';
+import { AddressListComponent } from '../address-list/address-list.component';
 
 @NgModule({
   imports: [
@@ -20,9 +21,12 @@ import { InputComponent } from '../input/input.component';
     ])
   ],
   declarations: [HomePage,
-  InputComponent],
+  InputComponent,
+  AddressListComponent,
+ ],
   entryComponents:[
     InputComponent,
+    AddressListComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
